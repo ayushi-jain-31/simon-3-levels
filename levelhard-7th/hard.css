@@ -1,0 +1,171 @@
+body{
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    height:100vh;
+    background-image: url("image.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+h3{
+    color: white;
+}
+h1{
+    width:10rem;
+    font-size: 2rem;
+    margin: 1rem auto 0.5rem auto;
+    color:rgb(0, 0, 0);
+    border: 2px dotted black;
+    border-radius: 10px;
+    background-color: rgb(226, 211, 211);
+}
+.start{
+    margin:0.2rem 0 0 0;
+    height: 3.5rem;
+    width: 8rem;
+    background-color: rgb(255, 208, 0);
+    color: blue;
+    font-size: 0.75rem;
+    font-weight:700;
+    border-radius: 10px;
+    box-shadow: 3px 3px 5px black;
+    transition: all 0.5s;
+}
+.start:hover{
+    box-shadow: 5px 5px 9px black;
+}
+.container{
+    margin-top: 1rem;
+}
+.btn{
+    margin:1rem;
+    background-color: rgb(135, 133, 136);
+    box-shadow: 4px 4px 6px rgb(60, 59, 59);
+    animation: moveShape 2s infinite;
+}
+.line1{
+    display: flex;
+    justify-content: center;
+}
+.line2{
+    display: flex;
+    justify-content: center;
+}
+.line3{
+    display: flex;
+    justify-content: center;
+}
+.line4{
+    display: flex;
+    justify-content: center;
+}
+.square{
+    height: 100px;
+    width:100px;
+}
+.circle{
+    height: 100px;
+    width:100px;
+    border-radius: 50%;
+}
+.rectangle{
+    width: 150px;
+    height: 100px;
+}
+.oval{
+    height: 80px;
+    width:130px;
+    border-radius: 50%;
+}
+
+.gameflash{
+    background-color: white;
+}
+.userflash{
+    background-color: black;
+}
+
+@keyframes moveShape {
+    0% {
+        transform: translateX(0);
+    }
+    25% {
+        transform: translateX(80px);
+    }
+    50% {
+        transform: translateX(0);
+    }
+    75% {
+        transform: translateX(-80px);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+/*responsive*/
+
+@media(min-width:670px) and (max-width:775px){
+    h1{
+        width:7rem;
+        font-size: 1.5rem;
+    }
+    .start{
+        height: 4rem;
+        width: 6rem;
+        font-size: 0.6rem;
+        font-weight:600;
+    }
+    .square{
+        height: 80px;
+        width:80px;
+    }
+    .circle{
+        height: 80px;
+        width:80px;
+    }
+    .rectangle{
+        width: 120px;
+        height: 80px;
+    }
+    .oval{
+        height: 70px;
+        width:110px;
+    }
+    
+}
+@media (max-width:670px){
+    h1{
+        width:6rem;
+        font-size: 1.2rem;
+    }
+    .start{
+        height: 3rem;
+        width: 6rem;
+        font-size: 0.5rem;
+        font-weight:600; 
+    }
+    .square{
+        height: 50px;
+        width:50px;
+    }
+    .circle{
+        height: 50px;
+        width:50px;
+    }
+    .rectangle{
+        width: 80px;
+        height: 50px;
+    }
+    .oval{
+        height: 50px;
+        width:80px;
+    }
+    
+}
+@media(max-width:345px) and (orientation:landscape){
+    body{
+        height: 100vh;
+    }
+}

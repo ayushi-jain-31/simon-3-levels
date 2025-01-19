@@ -1,0 +1,103 @@
+body{
+    text-align: center;
+    background-image: url("welcome.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    margin: 0; /* Reset default margin for body */
+    padding: 0; /* Reset default padding for body */
+}
+.welcome{
+    font-size:5rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-left:0.5rem;
+    margin-right:0.5rem;
+}
+span{
+    font-family: cursive;
+    color:rgb(33, 5, 246);
+}
+button{
+    text-align: center;
+    height:5rem;
+    width:8rem;
+    color:white;
+    font-size:3rem;
+    background-color: rgba(0,0,0);
+    border-radius: 10px; 
+    box-shadow: 2px 2px 5px rgb(50, 49, 49);
+    transition: all 0.5s;
+}
+.next{
+    margin-bottom: 4rem;
+    margin-top: 2rem; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+button:hover{
+    background-color: rgb(248, 198, 244);
+    color: rgb(35, 29, 29);
+    box-shadow: 6px 6px 10px rgb(0, 0, 0);
+}
+
+/*for responsive sites*/
+
+@media(min-width:460px) and (max-width:760px){
+    .welcome{
+        font-size:4rem;
+    }
+    body{
+        height:100vh;
+    }
+}
+@media(min-width:345px) and (max-width:460px){
+    .welcome{
+        font-size:3rem;
+    }
+    button{
+        height:3rem;
+        width:5rem;
+        font-size:2rem;
+    } 
+    body{
+        height:100vh;
+    }
+}
+
+@media(max-width:345px){
+    .welcome{
+        font-size:2rem;
+    }
+    button{
+        height:3rem;
+        width:5rem;
+        font-size:1.5rem;
+    }
+    .next{
+        margin-bottom: 4rem;
+        margin-top: 2rem;
+    }
+    body{
+        height: 100vh;
+    }
+}
+@media(max-width:230px){
+    .welcome{
+        font-size:1rem;
+    }
+    button{
+        height:2rem;
+        width:3rem;
+        font-size:1rem;
+    }
+    body{
+        height: 100vh;
+    }
+}    
+
+@media (max-width: 345px) and (orientation: landscape) {
+    body {
+        height: 100vh; /* Ensure full viewport height */
+    }
+}
