@@ -1,6 +1,6 @@
-let soundflash = new Audio("/sounds/soundflash.mp3");
-let soundbuttonpress = new Audio("/sounds/soundbuttonpress.mp3");
-let soundgameover = new Audio("/sounds/soundgameover.mp3");
+let soundflash = new Audio("sounds/soundflash.mp3");
+let soundbuttonpress = new Audio("sounds/soundbuttonpress.mp3");
+let soundgameover = new Audio("sounds/soundgameover.mp3");
 
 let gameSeq = [];
 let userSeq = [];
